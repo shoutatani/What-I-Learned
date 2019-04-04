@@ -1,6 +1,6 @@
 # What-I-Learned 私が学んだこと
 
-This repository tell you what I learned about.
+This repository tell you what I learned about in my life
 
 ## Learned About
 
