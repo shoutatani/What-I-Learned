@@ -37,7 +37,7 @@
 
 #### 9
 
-- React入門第一章〜大三章の内容を復習するために、Reactを、手を動かして作ってみた。
+- React入門第一章〜第三章の内容を復習するために、Reactを、手を動かして作ってみた。
   * 本編で、stateを解説するために、TodoListを使っているが、stateを手を動かして学ぶとともに。ReactTutorialの中で見た関数の受け渡しの方法で実装してみた。
     * が、関数の受け渡しの部分について曖昧な理解だということがわかったので、そこを明日以降突き止める。
     * 気になって、その後寝る前に調べた。
@@ -50,7 +50,7 @@
 
           ```
           The onClick prop on the built-in DOM <button> component tells React to set up a click event listener.
-
+ 
           When the button is clicked, React will call the onClick event handler that is defined in Square’s render() method.
 
           This event handler calls this.props.onClick(). The Square’s onClick prop was specified by the Board.
@@ -58,3 +58,22 @@
           Since the Board passed onClick={() => this.handleClick(i)} to Square, the Square calls this.handleClick(i) when clicked.
           ```
   * アロー関数について再理解。単一行で終わる場合は{}とreturnが不要であるが、単一行ではない三行での実装の場合は、{}とreturnが必要。
+
+#### 20
+  * thisのコンテキストをReactコンポーネントに定義したメソッドにbindする箇所があったので、JavaScriptのbind(call/apply)について再度学習。
+    * [初めてのJavaScript 第3版 ―ES2015以降の最新ウェブ開発](https://www.amazon.co.jp/dp/4873117836)に記述があったのでそちらで。
+      * const xxx = メソッド.bind(オブジェクト)で、関数を呼んだときに、指定したオブジェクトに束縛されることを学んだ。
+        * 関数を受け渡ししていくのも、それはそれで分かりやすいかと思った。。。
+        * reduxのreducerとの兼ね合いで、ベストプラクティスは何か見極めていくつもり。
+
+#### 22
+  * React入門の第五章を105ページまで呼んだ。
+    * Reduxの基本的なメソッドを学んだ。
+      * createStore(reducer, [preloadedState, enchancer])
+      * store.dispatch(action)
+      * store.getState()
+      * store.replaceReducer(reducer)
+      * unsubscribe = store.subscribe(function)
+        * storeの状態が変更したときにfunctionが呼ばれるようになる。
+        * unsubscribeを呼ぶことで、止まる。
+    * combineReducerで、子Storeも使えるらしい。
