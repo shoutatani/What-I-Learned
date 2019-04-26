@@ -77,3 +77,10 @@
         * storeの状態が変更したときにfunctionが呼ばれるようになる。
         * unsubscribeを呼ぶことで、止まる。
     * combineReducerで、子Storeも使えるらしい。
+
+#### 26
+  * React入門の第五章を実際に手を動かして覚える。
+    * reduxを実際に導入してみた。
+      * 今回は、store.subscribeの機能で、初期化時に作成したstoreを渡して描画させる手法で行った。(本の内容)
+    * Todoアプリにreduxの適用ができた。
+    * が、actionやreducerをどこに定義すべきかまだベストプラクティスがつかめていないので、React入門の106ページ以降を読み進めることとする。
