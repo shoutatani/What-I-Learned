@@ -1,0 +1,9 @@
+{
+  "name": "ES_Modules",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  }
+}
