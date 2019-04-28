@@ -43,3 +43,14 @@
     * 静的メソッドも継承される。
     * 親クラスのメソッドを呼ぶ場合、`super.methodName()`で呼び出し可能。
     * `オブジェクト instance_of クラス名`で、そのオブジェクトが指定したクラスを継承しているかどうか判断可能。
+
+## 2019-04-28
+
+* JavaScriptのES Modulesのexport/importについて学習した。
+  * どのようなimport/exportの手法が取れるのかを学ぶため。
+    * 使ったのか以下の2箇所。
+      * https://jsprimer.net/use-case/module/
+      * https://stackoverflow.com/questions/32558514/javascript-es6-export-const-vs-export-let
+  * 宣言した変数は基本的にRead-Onlyになることは知らなかった。
+    * が、同時にその変数を操作する関数をimportしていれば、その関数経由で変更はできる。
+  * CSSのモジュール化についても存在だけはしっているので、細かい仕組みも学んでいきたい。
