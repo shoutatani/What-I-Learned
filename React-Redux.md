@@ -80,3 +80,15 @@
       * 今回は、store.subscribeの機能で、初期化時に作成したstoreを渡して描画させる手法で行った。(本の内容)
     * Todoアプリにreduxの適用ができた。
     * が、actionやreducerをどこに定義すべきかまだベストプラクティスがつかめていないので、React入門の106ページ以降を読み進めることとする。
+
+## 2019-04-27
+  * React入門の第五章を全部読み、react-reduxの存在について学習。
+    * だが、mapStateToPropsとmapDispatchToPropsの詳しい使い方・ベストプラクティスがよくわからなかった。。。
+
+## 2019-04-29
+  * TypeScriptの勉強がてら、TypeScript Tutorial with Reactを読んでみた。
+    * https://github.com/Microsoft/TypeScript-React-Starter#making-a-container
+  * ここのmapStateToProps, mapDispatchToPropsの説明がすごくわかりやすかった。
+    * `mapStateToProps which massages the data from the current store to part of the shape that our component needs.`
+    * `mapDispatchToProps which creates callback props to pump actions to our store using a given dispatch function.`
+  * もう一度、React入門の第五章を、TypeScriptTutorialと比較して読み返してみることとする。
