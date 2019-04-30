@@ -92,3 +92,10 @@
     * `mapStateToProps which massages the data from the current store to part of the shape that our component needs.`
     * `mapDispatchToProps which creates callback props to pump actions to our store using a given dispatch function.`
   * もう一度、React入門の第五章を、TypeScriptTutorialと比較して読み返してみることとする。
+
+## 2019-04-30
+  * react-reduxを自作アプリに導入してみた。
+    + containerとアプリの接続をどう行うのか、というところに疑問を持っていたが、connectメソッドを呼ぶことで、componentをラップしたcontainerに同名のコンポーネントが生まれることで接続が可能になるということで理解ができた。
+      * [react-typescript tutotial](https://github.com/Microsoft/TypeScript-React-Starter#making-a-container)にも記述があって助かった。
+        + `connect will first take mapStateToProps and mapDispatchToProps, and then return another function that we can use to wrap our component.`
+    + 祝！令和！
