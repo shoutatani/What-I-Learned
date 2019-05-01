@@ -99,3 +99,7 @@
       * [react-typescript tutotial](https://github.com/Microsoft/TypeScript-React-Starter#making-a-container)にも記述があって助かった。
         + `connect will first take mapStateToProps and mapDispatchToProps, and then return another function that we can use to wrap our component.`
     + 祝！令和！
+
+## 2019-05-01
+  * React入門を読み進める
+    + が、react-routerを今は要していないので、一旦この本を読むのを打ち切った。
