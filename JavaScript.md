@@ -54,3 +54,10 @@
   * 宣言した変数は基本的にRead-Onlyになることは知らなかった。
     * が、同時にその変数を操作する関数をimportしていれば、その関数経由で変更はできる。
   * CSSのモジュール化についても存在だけはしっているので、細かい仕組みも学んでいきたい。
+
+## 2019-05-02
+
+* TypeScriptの学習を、React, Reduxを通して行った・
+  + 使ったのは、TypeScriptの[ReactTutorial](https://github.com/Microsoft/TypeScript-React-Starter)。
+  + JavaScriptのES&、React, Reduxの理解を先に行っていたおかげで、interfaceやtype, Type Assertionなどといった基本的な使い方を効率的に知ることができた。
+  + が、TypeScriptに関しては型定義ファイルなどといった部分については紹介されていなかったので、別途学習する必要がありそう。
