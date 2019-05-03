@@ -61,3 +61,9 @@
   + 使ったのは、TypeScriptの[ReactTutorial](https://github.com/Microsoft/TypeScript-React-Starter)。
   + JavaScriptのES&、React, Reduxの理解を先に行っていたおかげで、interfaceやtype, Type Assertionなどといった基本的な使い方を効率的に知ることができた。
   + が、TypeScriptに関しては型定義ファイルなどといった部分については紹介されていなかったので、別途学習する必要がありそう。
+
+## 2019-05-03
+
+* Object直下のthisの動きについて再確認した。
+  + トップレベルスコープでのobjectを生成した場合、そのobject直下でthisキーワードを使用すると、thisを参照しようとしてトップレベルスコープまでスコープチェーンを参照しにいってしまうため、strict modeの場合、thisはundefinedとなる。
+  + なので、Arrow Function内でthisを使用するメソッドを定義すると、そのthisは意図していないthisになる。
