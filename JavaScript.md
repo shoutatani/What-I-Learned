@@ -67,3 +67,8 @@
 * Object直下のthisの動きについて再確認した。
   + トップレベルスコープでのobjectを生成した場合、そのobject直下でthisキーワードを使用すると、thisを参照しようとしてトップレベルスコープまでスコープチェーンを参照しにいってしまうため、strict modeの場合、thisはundefinedとなる。
   + なので、Arrow Function内でthisを使用するメソッドを定義すると、そのthisは意図していないthisになる。
+
+
+## 2019-05-04
+  * りあクト！を48pまで読み進める
+    + JavaScriptは大体飲み込めたハズ。
